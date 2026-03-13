@@ -16,6 +16,7 @@ https://picsum.photos/v2/list
 
 ## Project Structure
 
+```
 
 lib
 ├ main.dart
@@ -28,6 +29,7 @@ lib
 └ screens
 └ home_screen.dart
 
+```
 
 ## Packages Used
 

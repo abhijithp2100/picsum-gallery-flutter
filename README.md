@@ -40,12 +40,3 @@ lib
 2. JSON data is converted into a Dart model (`ImageModel`).
 3. Provider manages the application state.
 4. The UI displays images in a grid layout.
-
-## Run the Project
-
-```bash
-flutter pub get
-flutter run
-Author
-
-Abhijith P

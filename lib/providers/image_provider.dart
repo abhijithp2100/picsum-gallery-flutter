@@ -10,7 +10,7 @@ class ImageProviderModel extends ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    images = await ApiService.fetchImages();
+    images = (await ApiService.fetchImages()).reversed.toList();
 
     isLoading = false;
     notifyListeners();

@@ -1,17 +1,44 @@
-# picsum_gallery
+# Picsum Gallery Flutter App
 
-A new Flutter project.
+A Flutter application that fetches images from the Picsum API and displays them in a grid gallery.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Fetch images from REST API
+- Display images in a grid layout
+- Show image author
+- State management using Provider
+- Responsive UI
 
-A few resources to get you started if this is your first Flutter project:
+## API Used
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+https://picsum.photos/v2/list
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+
+lib
+├ main.dart
+├ models
+│ └ image_model.dart
+├ services
+│ └ api_service.dart
+├ providers
+│ └ image_provider.dart
+└ screens
+└ home_screen.dart
+
+```
+
+## Packages Used
+
+- http
+- provider
+
+## How it Works
+
+1. The app calls the Picsum API.
+2. JSON data is converted into a Dart model (`ImageModel`).
+3. Provider manages the application state.
+4. The UI displays images in a grid layout.
